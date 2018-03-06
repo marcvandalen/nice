@@ -6,14 +6,13 @@
     <title>burton login</title>
 </head>
 <body>
-<form action="http://www.voormbo.nl/courses/html5/formtest.php" method="post">
-
-        <h2>Voorbeeldformulier</h2>
+<div id="wrapper2">
+<form action="http://www.savatarian.com/html5/form.php" method="post">
+        <h2>Inlogformulier</h2>
 <br>
         <label>voornaam:
-        <input type="tekst" name="voornaam">
+        <input type="text" name="voornaam">
         </label>
-    </label>
     <div class="checkbox">
     <label class="checkbox">Lekker eten:</label><br>
     <input class="checkbox" type="checkbox" name="lekker eten" value="patat">
@@ -25,30 +24,28 @@
         <br>
         <br>
 </div>
-
-    <div class="submit">
-        <input class="submit" type="submit" name="verzenden" value="verzenden">
-        <input class="submit" type="submit" name="annuleren" value="annuleren">
-    </div>
     <br>
     <br>
         <label>tussen voegsel:
-        <input type="tekst" name="tussen voegsel">
+        <input  type="text" name="tussen voegsel">
         </label>
     <br>
     <br>
         <label>achternaam:
-        <input type="tekst" name="achternaam">
+        <input type="text" name="achternaam">
         </label>
-
+    <div class="submit">
+        <input class="button"type="submit"  value="verzenden">
+        <input class="button" type="button" onclick="window.location.href='//localhost:63342/H5/H5.html'" value="annuleren">
+    </div>
     <br>
     <br>
-        <label>geslacht:
+    <label>geslacht:</label> <div class="geslacht">
         <input type="radio" name="geslacht" value="man"/>
-            &nbsp;Man
-            <input type="radio" name="geslacht" value="vrouw"/>
-            &nbsp;vrouw
-        </label>
+        &nbsp;Man
+        <input type="radio" name="geslacht" value="vrouw"/>
+        &nbsp;vrouw
+    </div>
     <br>
     <br>
     <label>kleur ogen:
@@ -69,7 +66,8 @@
     <label>omschrijving:<br>
         <textarea rows="8" name="omschrijving"></textarea><br>
     </label>
-
 </form>
+</div><!--wrapper2-->
+<br>
 </body>
 </html>
